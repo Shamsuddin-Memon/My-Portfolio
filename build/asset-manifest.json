@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/shamsPortfolio/static/css/main.2820bc35.css",
+    "main.js": "/shamsPortfolio/static/js/main.0d547253.js",
+    "static/js/453.96453769.chunk.js": "/shamsPortfolio/static/js/453.96453769.chunk.js",
+    "static/media/Screenshot_17-7-2025_173240_localhost.jpeg": "/shamsPortfolio/static/media/Screenshot_17-7-2025_173240_localhost.9eb2b380c2b35235aa78.jpeg",
+    "static/media/Screenshot_17-7-2025_165618_db-final.netlify.app.jpeg": "/shamsPortfolio/static/media/Screenshot_17-7-2025_165618_db-final.netlify.app.755d1276af0541071be6.jpeg",
+    "static/media/my.jpg": "/shamsPortfolio/static/media/my.74e76d19ed803b303dd3.jpg",
+    "static/media/Screenshot_17-7-2025_17529_textutilsbyshams.netlify.app.jpeg": "/shamsPortfolio/static/media/Screenshot_17-7-2025_17529_textutilsbyshams.netlify.app.404b73ab560c4f9137e5.jpeg",
+    "index.html": "/shamsPortfolio/index.html",
+    "main.2820bc35.css.map": "/shamsPortfolio/static/css/main.2820bc35.css.map",
+    "main.0d547253.js.map": "/shamsPortfolio/static/js/main.0d547253.js.map",
+    "453.96453769.chunk.js.map": "/shamsPortfolio/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2820bc35.css",
+    "static/js/main.0d547253.js"
+  ]
+}
