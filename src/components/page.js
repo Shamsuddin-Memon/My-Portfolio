@@ -2,9 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
 import {
   Mail,
-  Phone,
   MapPin,
-  Github,
   Linkedin,
   Code,
   Briefcase,
@@ -25,6 +23,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     if (!mountRef.current) return;
+    const localMount = mountRef.current;
 
     // Scene setup
     const scene = new THREE.Scene();
@@ -38,7 +37,7 @@ const Portfolio = () => {
 
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    mountRef.current.appendChild(renderer.domElement);
+    localMount.appendChild(renderer.domElement);
 
     // Lighting
     const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
@@ -105,7 +104,7 @@ const Portfolio = () => {
 
     // Handle resize
     const handleResize = () => {
-      if (!mountRef.current) return;
+      if (!localMount) return;
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
@@ -115,8 +114,8 @@ const Portfolio = () => {
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      if (mountRef.current && renderer.domElement) {
-        mountRef.current.removeChild(renderer.domElement);
+      if (localMount && renderer.domElement) {
+        localMount.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };
